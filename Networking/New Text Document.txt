@@ -1,0 +1,42 @@
+To solve this problem, we first need to determine the values of 'x' and 'y' from your student ID (1082759):
+
+Student ID: 1082759
+Third digit: 8 (from the third position in the ID)
+Fifth digit: 7 (from the fifth position in the ID)
+
+Given network block: 200.x.y.0/30
+Subnet mask: 255.255.255.252 (30 bits for the network portion)
+
+a) Number of networks:
+Since the subnet mask is /30, which provides 2 usable IP addresses per subnet (2^2 - 2), the total number of networks is 2^8 (since 'x' can range from 0 to 255) * 2^8 (since 'y' can range from 0 to 255) = 65,536 networks.
+
+b) Number of hosts per network:
+With a /30 subnet mask, there are 2 usable IP addresses per subnet (2^2 - 2), so there are 2 hosts per network.
+
+c) Network address, First host IP, Last host IP, and Broadcast address for each of the first three subnetworks:
+
+Subnet 1:
+
+Network address: 200.8.7.0
+First host IP: 200.8.7.1
+Last host IP: 200.8.7.2
+Broadcast address: 200.8.7.3
+Subnet 2:
+
+Network address: 200.8.7.4
+First host IP: 200.8.7.5
+Last host IP: 200.8.7.6
+Broadcast address: 200.8.7.7
+Subnet 3:
+
+Network address: 200.8.7.8
+First host IP: 200.8.7.9
+Last host IP: 200.8.7.10
+Broadcast address: 200.8.7.11
+Please note that these calculations are based on the assumption that 'x' and 'y' can take any value from 0 to 255. If there are specific limitations or ranges for 'x' and 'y', the calculations would need to be adjusted accordingly.
+
+
+
+
+
+
