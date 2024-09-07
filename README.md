@@ -1,2 +1,2 @@
 # Remote-Work 
-# Local Project
+# Mini Project
